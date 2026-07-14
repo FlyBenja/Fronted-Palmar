@@ -1,0 +1,195 @@
+.recibo-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid #eeeeee;
+}
+
+.recibo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.recibo-header h2 {
+  margin: 8px 0;
+  color: var(--color-corinto);
+  font-weight: 900;
+}
+
+.recibo-header p {
+  margin: 0;
+  color: #666666;
+}
+
+.recibo-label {
+  color: var(--color-corinto);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.78rem;
+}
+
+.recibo-status-box {
+  min-width: 170px;
+  background: #fafafa;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.recibo-status-box strong {
+  color: var(--color-corinto);
+  font-size: 1.05rem;
+}
+
+.recibo-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 16px;
+}
+
+.recibo-section-title h3 {
+  margin: 0;
+  color: var(--color-corinto);
+  font-weight: 900;
+}
+
+.recibo-section-title span {
+  background: #f7f7f7;
+  color: var(--color-corinto);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 800;
+}
+
+.recibo-table {
+  border-color: #eeeeee;
+}
+
+.recibo-table thead th {
+  color: var(--color-corinto);
+  border-bottom: 2px solid var(--color-corinto);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.recibo-table tbody td {
+  vertical-align: top;
+}
+
+.recibo-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recibo-order-details > span {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 10px 12px;
+  border: 1px solid #eeeeee;
+}
+
+.recibo-totals {
+  margin-left: auto;
+  margin-top: 24px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recibo-totals > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+}
+
+.recibo-totals span {
+  color: #666666;
+  font-weight: 700;
+}
+
+.recibo-totals strong {
+  color: var(--color-corinto);
+  font-size: 1.1rem;
+}
+
+.recibo-totals .total {
+  background: var(--color-corinto);
+  border-color: var(--color-corinto);
+}
+
+.recibo-totals .total span,
+.recibo-totals .total strong {
+  color: #ffffff;
+}
+
+.recibo-totals .total strong {
+  font-size: 1.35rem;
+}
+
+.recibo-payment-summary {
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.recibo-payment-summary span {
+  color: #666666;
+  font-weight: 700;
+}
+
+.recibo-payment-summary strong {
+  color: var(--color-corinto);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .recibo-card {
+    padding: 20px;
+  }
+
+  .recibo-header {
+    flex-direction: column;
+  }
+
+  .recibo-status-box {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .recibo-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recibo-totals {
+    max-width: 100%;
+  }
+
+  .recibo-payment-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

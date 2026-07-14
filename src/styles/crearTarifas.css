@@ -1,0 +1,29 @@
+.crear-tarifas-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.crear-tarifas-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.crear-tarifas-card table {
+  margin-bottom: 0;
+}
+
+.crear-tarifas-card tbody tr {
+  transition: background 0.2s ease;
+}
+
+.crear-tarifas-card tbody tr:hover {
+  background: #fafafa;
+}
+
+.tarifa-precio {
+  color: var(--color-corinto);
+  font-weight: 800;
+  font-size: 1.05rem;
+}

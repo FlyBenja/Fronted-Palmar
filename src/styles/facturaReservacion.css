@@ -1,0 +1,173 @@
+.factura-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.factura-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.factura-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+
+.factura-label {
+  color: var(--color-corinto);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.82rem;
+}
+
+.factura-header h2 {
+  color: var(--color-corinto);
+  font-weight: 900;
+  margin: 8px 0 4px;
+}
+
+.factura-header p {
+  margin: 0;
+  color: #666666;
+}
+
+.factura-status-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.factura-status-box strong {
+  color: var(--color-corinto);
+}
+
+.factura-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.factura-info-grid div {
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.factura-info-grid span,
+.factura-totals span,
+.factura-payment-summary span {
+  color: #666666;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.factura-info-grid strong,
+.factura-totals strong,
+.factura-payment-summary strong {
+  color: var(--color-negro);
+}
+
+.factura-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.factura-section-title h3 {
+  color: var(--color-corinto);
+  font-weight: 900;
+  margin: 0;
+}
+
+.factura-section-title span {
+  color: #666666;
+}
+
+.factura-table p {
+  font-size: 0.9rem;
+}
+
+.factura-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.factura-totals {
+  width: min(100%, 420px);
+  margin-left: auto;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.factura-totals div,
+.factura-payment-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.factura-totals div.total {
+  background: var(--color-corinto);
+}
+
+.factura-totals div.total span,
+.factura-totals div.total strong {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.factura-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.factura-payment-summary strong {
+  color: var(--color-corinto);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1100px) {
+  .factura-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .factura-header,
+  .factura-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .factura-status-box {
+    align-items: flex-start;
+  }
+
+  .factura-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

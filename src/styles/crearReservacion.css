@@ -1,0 +1,133 @@
+.crear-reservacion-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.crear-reservacion-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(320px, 0.9fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.crear-reservacion-card,
+.crear-reservacion-resumen {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.crear-reservacion-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.crear-reservacion-label {
+  color: var(--color-corinto);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08rem;
+}
+
+.crear-reservacion-card h2,
+.crear-reservacion-resumen h3 {
+  margin: 8px 0 0;
+  color: var(--color-corinto);
+  font-weight: 800;
+}
+
+.crear-reservacion-card .form-label {
+  font-weight: 700;
+  color: #333;
+}
+
+.crear-reservacion-resumen {
+  position: sticky;
+  top: 32px;
+}
+
+.resumen-room-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.resumen-room-header h4 {
+  margin: 0 0 8px;
+  color: var(--color-negro);
+  font-weight: 800;
+}
+
+.resumen-room-header strong {
+  color: var(--color-corinto);
+  font-size: 1.3rem;
+}
+
+.resumen-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.resumen-info-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 12px;
+}
+
+.resumen-info-item span {
+  color: #666;
+}
+
+.resumen-info-item strong {
+  color: var(--color-negro);
+  text-align: right;
+}
+
+.resumen-info-item.total {
+  border-bottom: none;
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.resumen-info-item.total span,
+.resumen-info-item.total strong {
+  color: var(--color-corinto);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.resumen-empty {
+  margin-top: 20px;
+  min-height: 220px;
+  border: 1px dashed #cccccc;
+  border-radius: 18px;
+  color: #777;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+@media (max-width: 1100px) {
+  .crear-reservacion-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .crear-reservacion-resumen {
+    position: static;
+  }
+}
